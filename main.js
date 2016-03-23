@@ -1,3 +1,14 @@
+// var userInput = $('.searchBtn').on('click', function(e) {
+// 	$('.searchBar').html();
+// });
+// console.log(userInput);
+// $('.searchBtn').on('click', function(e) {
+// 	return userInput.val();
+// }
+
+
+
+
 var results = {
 	url: 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p&keywords=whiskey&includes=Images,Shop',
 	type: 'GET',
