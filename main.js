@@ -5,6 +5,7 @@ var results = {
 	success: function(data) {
 		console.log(data);
 		var container = $('#searchResults');
+		console.log(container);
 		data.results.forEach(function(val, i, arr) {
 			var outerBox = $('<div class="outerBox"></div>');
 			var imageBox = $('<img>', {'src': val.Images[0].url_170x135});
