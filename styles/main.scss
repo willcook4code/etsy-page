@@ -1,45 +1,77 @@
-.titles {
-	> a {
-		text-decoration: none;
-		font-family: "Graphik Web","Arial","Helvetica",sans-serif;
-		font-size: 0.7em;
-		color: black;
-		white-space: nowrap;
-		margin: 0.5em;
-	}
-}
-.outerBox {
-	width: 14.125em;
-    height: 14.375em;
-    background-color: white;
-    border: 1px solid #9A9A9A;
-    margin: 1em 0;
-    float: right;
-    overflow: hidden;
-}
-.seller {
-	text-decoration: none;
-	color: #9A9A9A;
-	font-size: 0.7em;
-	margin: 0.5em;
-}
-.price {
-	font-size: 0.7em;
-	color: #78C042;
-	float: right;
-	margin: 0.5em;
-}
-img {
-	width: 14.125em;
-	height: 11.25em;
-}
-#searchResults {
-	-webkit-column-count: 3;
-    height: 148.5em;
-    width: 49em;
-    -webkit-columns: 15em;
-    margin: 0 17em;
-}
 body {
 	background-color: #F5F5F1;
+	.navbar {
+		    display: block;
+    		margin-top: 1em;
+    		margin-left: 2em;
+    		height: 4em;
+    		overflow: hidden;
+    	.searchBar {
+    		background-color: #FBFBFA;
+    		height: 1.5em;
+    		margin-left: 1em;
+    	    border-bottom-left-radius: 0.4em;
+    		border-top-left-radius: 0.4em;
+    	}
+    	.searchBtn {
+    	// 	height: 1.5em;
+    	// 	width: 5em;
+    		background-color: #34ABC4;
+    		color: white;
+    		border-bottom-right-radius: 0.4em;
+    		border-top-right-radius: 0.4em;
+    		padding: 0.4em;
+    	// 	text-align: center;
+    		text-decoration: none;
+    	}
+    	.links {
+    		display: inline;
+    		float: right;
+    	}
+	}
+	#searchResults {
+			-webkit-column-count: 3;
+		    height: 148.5em;
+		    width: 49em;
+		    -webkit-columns: 15em;
+		    margin: 0 17em;
+		.outerBox {
+			width: 14.125em;
+		    height: 14.375em;
+		    background-color: white;
+		    border: 1px solid #9A9A9A;
+		    border-radius: 0.2em;
+		    margin: 1em 0;
+		    float: right;
+		    overflow: hidden;
+			.titles {
+				line-height: 1.4em;
+				> a {
+					text-decoration: none;
+					font-family: "Graphik Web","Arial","Helvetica",sans-serif;
+					font-size: 0.7em;
+					color: black;
+					white-space: nowrap;
+					margin: 0.5em;
+				}
+			}
+			.seller {
+				text-decoration: none;
+				color: #9A9A9A;
+				font-size: 0.7em;
+				margin: 0.5em;
+				font-weight: bold;
+			}
+			.price {
+				font-size: 0.7em;
+				color: #78C042;
+				float: right;
+				margin: 0.5em;
+			}
+			img {
+				width: 14.125em;
+				height: 11.25em;
+			}
+		}
+	}
 }
