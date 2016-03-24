@@ -14,8 +14,10 @@ var input = $('.searchBtn');
 
 
 function search(){
+	$('#searchResults').html('');
 	results.url = 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p&keywords='+userInput.val()+'&includes=Images,Shop',
 	$.ajax(results);
+
 }
 
 
@@ -24,8 +26,10 @@ var results = {
 	type: 'GET',
 	dataType: 'jsonp',
 	success: function(data) {
+
 		console.log(data);
 		var container = $('#searchResults');
+
 		console.log(container);
 		data.results.forEach(function(val, i, arr) {
 			var outerBox = $('<div class="outerBox"></div>');
@@ -55,6 +59,6 @@ var results = {
 	}
 };
 
-$.ajax(results);
+
 input.on('click', search);
 
