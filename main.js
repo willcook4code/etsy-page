@@ -1,25 +1,11 @@
 var userInput = $('.searchBar');
 var input = $('.searchBtn');
 
-
-// var userInput = search.on('click', function(e) {
-// 	$('.searchBar').html();
-// });
-// console.log(userInput);
-// $('.searchBtn').on('click', function(e) {
-// 	return userInput.val();
-// }
-
-	
-
-
 function search(){
 	$('#searchResults').html('');
 	results.url = 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p&keywords='+userInput.val()+'&includes=Images,Shop',
 	$.ajax(results);
-
 }
-
 
 var results = {
 	url: 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p',
@@ -58,7 +44,6 @@ var results = {
 		console.log('i got a response');
 	}
 };
-
 
 input.on('click', search);
 
