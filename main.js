@@ -1,4 +1,8 @@
-// var userInput = $('.searchBtn').on('click', function(e) {
+var userInput = $('.searchBar');
+var input = $('.searchBtn');
+
+
+// var userInput = search.on('click', function(e) {
 // 	$('.searchBar').html();
 // });
 // console.log(userInput);
@@ -6,11 +10,17 @@
 // 	return userInput.val();
 // }
 
+	
 
+
+function search(){
+	results.url = 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p&keywords='+userInput.val()+'&includes=Images,Shop',
+	$.ajax(results);
+}
 
 
 var results = {
-	url: 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p&keywords=whiskey&includes=Images,Shop',
+	url: 'https://api.etsy.com/v2/listings/active.js?api_key=l0w3n75mrxpsyo18jza49o6p',
 	type: 'GET',
 	dataType: 'jsonp',
 	success: function(data) {
@@ -46,4 +56,5 @@ var results = {
 };
 
 $.ajax(results);
+input.on('click', search);
 
