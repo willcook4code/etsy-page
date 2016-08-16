@@ -41,8 +41,9 @@ body {
     background: white; }
   body #searchResults {
     height: 148.5em;
-    width: 49em;
-    margin: 0 25em; }
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 6em; }
     body #searchResults .outerBox {
       width: 14.125em;
       height: 14.375em;
